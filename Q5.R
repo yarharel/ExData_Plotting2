@@ -20,7 +20,7 @@ CombYearData<-subset(NEI,SCC %in% SCC_Comb$SCC,select=c(year,fips,Emissions))  %
 png("plot5.png")
 plot(CombYearData$year,CombYearData$Emissions,type="b",xlab = "Year"
      ,ylab="Total Emissions",xaxt="n",xlim=c(1999,2008)
-     ,main="Combustion-Related Yearly Emissions")
+     ,main="Combustion-Related Yearly Emissions in Baltimore")
 ticks<-c(1998:2008)
 axis(side = 1,at=ticks,labels=ticks)
 dev.off()
